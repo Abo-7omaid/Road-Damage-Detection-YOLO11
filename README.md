@@ -70,18 +70,7 @@ onnx_model = YOLO('road_damage_yolo11_saved_model/train/weights/best.onnx')
 results = onnx_model.predict(source='sample_image.jpg', conf=0.30, imgsz=640)
 ```
 
-## 📂 Repository Structure
-```text
-📦 Road-Damage-YOLO11
- ┣ 📂 road_damage_yolo11_saved_model/  # YOLO11s Model (50 Epochs, US-Only)
- ┃ ┣ 📂 train/weights/                 # best.pt, last.pt, best.onnx
- ┃ ┣ 📂 sample_predictions/            # Visual demo detections
- ┃ ┗ 📜 results.csv                    # Epoch-by-epoch training logs
- ┣ 📜 Road_Damage_YOLO11_Presentation.pptx # Full Pitch Deck
- ┣ 📜 Presentation_Script.md           # English Speaker Script
- ┣ 📜 Presentation_Script_Arabic.md    # Arabic Speaker Script
- ┗ 📜 README.md
-```
+
 
 ## 🔮 Future Work
 - **Global Fine-tuning:** Train on the full multi-country dataset for 100+ epochs to generalize the domain.
